@@ -15,7 +15,7 @@ public class HomeController {
     UserServiceImpl service;
 
 
-    @RequestMapping("/users")
+    @RequestMapping("/api/users")
     public String getIndex(ModelMap model) {
         model.addAttribute("users", service.readUsers());
         return "users";

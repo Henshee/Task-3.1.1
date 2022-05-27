@@ -9,8 +9,6 @@ import javax.transaction.Transactional;
 import java.util.List;
 
 @Repository
-@Component
-@Transactional
 public class UserDaoImpl implements UserDao {
 
     @PersistenceContext
